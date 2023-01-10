@@ -135,6 +135,8 @@ const age1 = 19;
 const ageNum = 18;
 const ageStr = '18';
 // equality, == vs ===
+// == is loose equality, === is strict equality
+
 //== performs type coersion. != is not ==
 adultAge == age1; //false
 adultAge == ageStr; //TRUE
@@ -153,3 +155,45 @@ const getNumber = Number(prompt("favorate number?"));//23 is now a string
 
 if (getNumber === 7) console.log('7 is a cool number');
 else if (getNumber !== 7 && getNumber === 23) console.log('23 is also a cool number');
+
+// && - logic AND
+// || - logic OR
+// ! - logic NOT
+
+//expression - produce a value
+!false && false;
+
+//statements - a bigger piece of code
+//if statement..., ends with semicolon
+
+// The switch Statement
+// case value is ===
+//https://javascript.info/switch
+const day = 'wednesday';
+
+switch (day) {
+    case 'monday': // day === 'monday'
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');// executes when day ==='wednesday' or day==='thursday'
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend :D');
+        break;
+    default:
+        console.log('Not a valid day!');
+}
+
+//ternary expressions
+const drink = age1 >= 18 ? 'wine 🍷' : 'water 💧';
+console.log(drink);
