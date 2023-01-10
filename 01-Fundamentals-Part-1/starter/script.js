@@ -128,3 +128,28 @@ let val = NaN;
 if (!val) console.log(`${val} is falsy`);
 else console.log(`${val} is truthy`);
 
+//!!! 0 is falsy, but is a valid input in many cases(i.e grade)
+
+const adultAge = 18;
+const age1 = 19;
+const ageNum = 18;
+const ageStr = '18';
+// equality, == vs ===
+//== performs type coersion. != is not ==
+adultAge == age1; //false
+adultAge == ageStr; //TRUE
+adultAge == ageNum;//true
+
+//=== does NOT perform type coersion, perferred in JS
+//!== is not ===, perferred in JS
+adultAge === age1; //false
+adultAge === ageStr; //FALSE
+adultAge === ageNum;//true
+
+//get input
+const getNumString = prompt("favorate number?");//23
+console.log(typeof getNumString);//getVal is a STRING
+const getNumber = Number(prompt("favorate number?"));//23 is now a string
+
+if (getNumber === 7) console.log('7 is a cool number');
+else if (getNumber !== 7 && getNumber === 23) console.log('23 is also a cool number');
