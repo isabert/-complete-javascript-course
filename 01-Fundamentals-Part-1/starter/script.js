@@ -66,3 +66,21 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Oper
 let x, y;
 x = y = 25 - 10 - 5;//- has precedence 14, = has precedence 2
 console.log(x, y);//10,10
+
+firstName = "Jonas";
+x = 1991;
+y = 2022;
+const jonas = "I'm" + firstName + ", my age is " + (y - x);// use "" when sentence involve '
+
+const jonas2 = `I'm ${firstName}, my age is ${y - x}`;//template string
+const jonas3 = `Just a regular string using template strings`;
+
+const tabString1 = "string with \n\
+multiple lines\n\
+"; // \n is tab \<space> is a bug JS
+
+const tabString2 = `
+string with
+multiple lines
+`; // template string allows multi lines strings
+
