@@ -94,7 +94,18 @@ const jonas = {
     lastName: 'Schmedtmann',
     age: 2037 - 1991,
     job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steven']
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+    calcbirth: function () {
+        this.birthYear = 2037 - this.age;//this: getting values from object
+        return this.birthYear;
+    },
+    sayHi: function (greetings) {
+        return `${this.firstName} ${this.lastName} says :"${greetings}"`;
+    },
+    canDrive: function () {
+        return `${this.firstName} ${this.lastName} ${this.hasDriversLicense ? "can" : "can't"} drive`;
+    }
 };
 
 //dot notation
@@ -113,3 +124,7 @@ jonas[jonasProperty];//46
 jonas.location = "nowhere";
 jonas['likes'] = 'Jessica';
 
+//call function in object
+jonas.calcbirth();
+console.log(jonas.sayHi("Hi"));
+console.log(jonas.canDrive());
