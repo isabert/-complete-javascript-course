@@ -91,5 +91,16 @@ else {
     console.log(tabString2)
 }
 
+//type conversion
+const yearStr = "1991";
+const yearNum = 1991;
+console.log(Number(yearStr), yearStr);//number, string
+console.log(yearStr + 18); //199118
+console.log(Number("Jonas"));//NaN, type NaN = number
+
+console.log(String(yearNum));//convert number to string
+
+//type coercion
+console.log('I\'m ' + 23 + ' years old');//+ converts number to string, same things happening in template literals
 
 
