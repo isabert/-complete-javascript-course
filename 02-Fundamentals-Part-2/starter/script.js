@@ -70,8 +70,8 @@ friendsArray = ['Bob', 'Alice'];
 const numArray = new Array(1, 2, 3);
 console.log(numArray.length);
 
-const jonas = ['Jonas', calcAge3(1991, 2023), friendsArray]; //elements in the array can have different types
-console.log(jonas);
+const jonasArray = ['Jonas', calcAge3(1991, 2023), friendsArray]; //elements in the array can have different types
+console.log(jonasArray);
 
 // Add elements
 let newLength = friendsArray.push("Jessica"); // add to the end of array
@@ -87,3 +87,29 @@ friend_idx = friendsArray.indexOf("Bob");//returns -1 if not found
 console.log(friend_idx);
 
 console.log(friendsArray.includes("Steven"));//returns boolean 
+
+//Object: aka Dictionary/Map
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+
+//dot notation
+jonas.firstName;//jonas.<property>
+
+//bracket notation
+const nameType = 'first';
+jonas[nameType + 'Name'];//jonas[expression]
+
+//dot vs bracket
+const jonasProperty = 'age';
+jonas.jonasProperty; //undefined
+jonas[jonasProperty];//46
+
+//add element in object
+jonas.location = "nowhere";
+jonas['likes'] = 'Jessica';
+
