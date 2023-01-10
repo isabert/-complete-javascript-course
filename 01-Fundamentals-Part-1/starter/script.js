@@ -103,4 +103,28 @@ console.log(String(yearNum));//convert number to string
 //type coercion
 console.log('I\'m ' + 23 + ' years old');//+ converts number to string, same things happening in template literals
 
+console.log('23' + '10' + 3); //23103, + converts number to strings
+console.log('23' - '10' - 3); //10, - converts strings to numbers
+console.log('23' * '2'); //46, * converts strings to numbers
+console.log('23' / '10'); //2.3, / converts strings to numbers
+
+1 + '1' - 1;//10
+2 + 3 + 4 + '5'; //95
+'10' - '4' - '3' - 2 + '5'; //15
+
+//falsy values: not false, but will becomes false under boolean conversion
+//0,'',undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean(""));
+
+//truthy values: everything else other than falsy values and false
+console.log(Boolean("Jonas"));
+
+//No need to explicitly convert falsy values to false
+let val = NaN;
+if (!val) console.log(`${val} is falsy`);
+else console.log(`${val} is truthy`);
 
