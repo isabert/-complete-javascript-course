@@ -128,3 +128,20 @@ jonas['likes'] = 'Jessica';
 jonas.calcbirth();
 console.log(jonas.sayHi("Hi"));
 console.log(jonas.canDrive());
+
+//for loop
+const num_arr = []
+for (let i = 0; i < 10; i++) {
+    if (i === 0) continue;
+    if (i === 8) break;
+    console.log(i);
+    num_arr.push(i);
+}
+console.log(num_arr, typeof num_arr, num_arr.length);
+
+let i = 0;
+while (i < 10) {
+    num_arr.push(i);
+    i++;
+}
+console.log(num_arr);
