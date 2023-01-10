@@ -84,3 +84,12 @@ string with
 multiple lines
 `; // template string allows multi lines strings
 
+if ((y - x) > 18) {
+    console.log(tabString1);
+}
+else {
+    console.log(tabString2)
+}
+
+
+
