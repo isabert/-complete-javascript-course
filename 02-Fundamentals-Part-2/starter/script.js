@@ -2,7 +2,9 @@
 Strict Mode:
 Don't allow JS to fail silently
 */
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 'use strict'; // has to be the first line of CODE for each script
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
 //The following code will fail in strict mode
 let hasDriversLicense = false;
@@ -53,3 +55,35 @@ const calcRetirement = birthyear => {
 console.log(calcAge2(1991));
 console.log(calcAge3(1991, 2023));
 console.log(calcRetirement(1991));
+
+//arrays
+
+const friendsArray = ['Michael', 'Steven', 'Peter'];
+console.log(friendsArray[0]);
+friendsArray[2] = 'Jay';// only primative const values is immutable
+
+console.log(friendsArray);
+/*
+// This is not allowed because of the const keyword
+friendsArray = ['Bob', 'Alice']; 
+*/
+const numArray = new Array(1, 2, 3);
+console.log(numArray.length);
+
+const jonas = ['Jonas', calcAge3(1991, 2023), friendsArray]; //elements in the array can have different types
+console.log(jonas);
+
+// Add elements
+let newLength = friendsArray.push("Jessica"); // add to the end of array
+newLength = friendsArray.unshift("John"); // add to the beginning of the array
+
+//remove elements
+let element = friendsArray.pop();//remove from end,Jessica
+element = friendsArray.shift();//remove from beginning,John
+
+let friend_idx = friendsArray.indexOf("Steven");//returns first index
+console.log(friend_idx);
+friend_idx = friendsArray.indexOf("Bob");//returns -1 if not found
+console.log(friend_idx);
+
+console.log(friendsArray.includes("Steven"));//returns boolean 
