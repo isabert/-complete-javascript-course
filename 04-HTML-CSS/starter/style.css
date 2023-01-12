@@ -1,0 +1,22 @@
+body {
+    background-color: aquamarine;
+    /* Fonts properties will inharent */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*font sizes of h1... are predefined, can be set individually*/
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+.first {
+    /* .<class> */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#your-name {
+    background-color: bisque;
+    /* border is not inhereted */
+    border: 5px solid #444;
+}
