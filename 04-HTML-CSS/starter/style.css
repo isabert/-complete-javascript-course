@@ -40,3 +40,23 @@ h2 {
     padding: 25px;
     margin-top: 25px;
 }
+
+#your-name h2 {
+    /* h2 elemetn in id=your-name */
+    font-size: 25px;
+    color: red;
+
+}
+
+#firefox-image {
+    width: 50px;
+}
+
+input,
+button {
+    padding: 5px;
+}
+
+a {
+    background-color: royalblue;
+}
