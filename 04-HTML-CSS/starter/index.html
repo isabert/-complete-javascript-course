@@ -1,17 +1,56 @@
-<html>
-<!-- includes all HTML code -->
+<!--
+    type:
+    !<tab>
+    into vscode to automatically get a html template
+ -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <!--  not visible on the page at all -->
-    <title>HTML and CSS Crash Course</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styling -->
+    <style>
+        /* method 1: use style element */
+    </style>
+    <link href="style.css" rel="stylesheet">
+
+
+    <title>Document</title>
 </head>
 
 <body>
     <h1>Displayed Text for Title</h1>
-    <p>h1 bolded test for title, p is actually a paragraph.</p>
-    <h2>S smaller Title</h2>
-    <p>Just another paragraph</p>
-    <h6> The smallest title</h6>
+    <p class="first">
+        h1 bolded test for title, p is actually a paragraph.
+        <br />
+        <a href="https://www.w3schools.com/html/">Hypertext, href attribute is the link</a>
+    </p>
+
+    <h2>Let me get a image</h2>
+    <p class="second">
+        Hey, here is a firefox logo.
+        <img id="firefox-image" src="chrome://branding/content/about-logo.png" />
+    </p>
+
+    <div id="your-name">
+        <h2>Your name here</h2>
+
+        <input type="text" placeholder="Your Name" />
+        <button>Submit!</button>
+    </div>
+
+    <h1>The Technical Notes</h1>
+    <p class="first">
+        classe attribute is recycleable. Can be used to stype elements.
+        <br />
+        id attributute has to be unique.
+    </p>
+    <p class="first" &lttag> &lttag/> is equavalent to &lttag> is equavalent to &lttag/>
+    </p>
+
 </body>
 
 </html>
