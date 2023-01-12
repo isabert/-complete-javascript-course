@@ -44,7 +44,7 @@ console.log(ca1);
 
 //ARROW FUNCTION, added in ES6, a simpler function expression
 // arrow function doesn't get a this keyword, unlike a regular function
-//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+//https://jaketrent.com/post/javascript-arrow-function-no-params/
 const calcAge2 = birthyear => 2023 - birthyear;
 const calcAge3 = (birthYear, now) => now - birthYear;
 const calcRetirement = birthyear => {
