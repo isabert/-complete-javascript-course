@@ -1,3 +1,12 @@
+/* Global reset of all elements */
+* {
+    /* Refer to css_box.png */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
 body {
     background-color: aquamarine;
     /* Fonts properties will inharent */
@@ -8,6 +17,12 @@ body {
 
 h1 {
     font-size: 35px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .first {
@@ -19,4 +34,7 @@ h1 {
     background-color: bisque;
     /* border is not inhereted */
     border: 5px solid #444;
+    width: 400px;
+    padding: 25px;
+    margin-top: 25px;
 }
